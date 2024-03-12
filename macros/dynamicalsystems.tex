@@ -1,0 +1,53 @@
+% distinguish between var, fun, procedure, operator
+
+% Unsorted 
+\newcommand{\ivp}{\bf \text{IVP}}
+
+% Unsorted 
+\DeclareMathOperator{\Ran}{Range}
+\DeclareMathOperator{\Tan}{Tan}
+\newcommand{\Range}[1]{\Ran[#1]}
+
+% Topological spaces
+\newcommand{\InputSpace}{\cal{S}}
+\newcommand{\OutputCoDom}{\mathbb{R}}
+\newcommand{\outputspace}{\cal{J}}
+\newcommand{\StateSpace}{\cal{U}}
+\newcommand{\timespace}{\mathbb{R}}
+\newcommand{\finiteinterval}{[0, T]}
+
+% Variables
+\newcommand{\StateVar}{u}
+\newcommand{\InputVar}{{\bm{s}}}
+\newcommand{\OutputVar}{J}
+\newcommand{\TimeVar}{t}
+\newcommand{\stateattime}{\StateFun{\ArbTime}{\InputVar}}
+\newcommand{\ivpstateattime}{\StateFuniv{\ArbTime}{\InputVar}}
+
+% Constants
+\newcommand{\ArbTime}{\TimeVar^\prime}
+\newcommand{\StateVarInit}{\StateVar_0}
+\newcommand{\TimeEnd}{T}
+
+% Functions
+\newcommand{\StateFun}[2]{\StateVar(#1, #2)}
+\newcommand{\StateFuniv}[2]{\StateVar_{iv} (#1, #2)}
+\newcommand{\FlowMap}[3]{f (#1, #2, #3)}
+\newcommand{\OutputVariv}{{J}}
+\newcommand{\ivpsol}{\StateFuniv{\TimeVar}{\InputVar}}
+\newcommand{\outputfun}[2]{\OutputVar{\left(#1, #2\right)}}
+
+% Procedure
+\newcommand{\ivpsymb}{\bm{\Psi}}
+\newcommand{\ivpproc}[3]{\ivpsymb[#1, #2, #3]}
+
+% Expressions
+\newcommand{\sol}{\StateVar(t;s)}
+\newcommand{\TimeAvgOutputVar}{\timeavgiv{\OutputVar} (\InputVar)}
+
+% Constraint
+\newcommand{\StateVarConst}{} 
+
+% Equation tags
+\newcommand{\AvgIVP}{\bf\text{AvgIVP}}
+\newcommand{\SenseIVP}{\bf\text{SenseIVP}}

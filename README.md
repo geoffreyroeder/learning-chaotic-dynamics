@@ -1,0 +1,1 @@
+Template for research notes and technical reports

@@ -1,0 +1,9 @@
+\newcommand{\setheader}[6]{
+	\lhead{{\sc #1}\\{\sc #2} ({\small \textit{\today}})}
+	\rhead{
+		{\bf #3} 
+		\ifthenelse{\equal{#4}{}}{}{(#4)}\\
+		{\bf #5} 
+    \ifthenelse{\equal{#6}{}}{}{(#6)}%
+	}
+}
